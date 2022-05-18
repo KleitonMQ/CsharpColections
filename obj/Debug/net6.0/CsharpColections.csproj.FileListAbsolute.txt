@@ -13,3 +13,18 @@ C:\Users\User\Desktop\ProjetosDEV\CsharpColections\obj\Debug\net6.0\refint\Cshar
 C:\Users\User\Desktop\ProjetosDEV\CsharpColections\obj\Debug\net6.0\CsharpColections.pdb
 C:\Users\User\Desktop\ProjetosDEV\CsharpColections\obj\Debug\net6.0\CsharpColections.genruntimeconfig.cache
 C:\Users\User\Desktop\ProjetosDEV\CsharpColections\obj\Debug\net6.0\ref\CsharpColections.dll
+E:\Projetos dev\CsharpColections\obj\Debug\net6.0\CsharpColections.csproj.AssemblyReference.cache
+E:\Projetos dev\CsharpColections\obj\Debug\net6.0\CsharpColections.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projetos dev\CsharpColections\obj\Debug\net6.0\CsharpColections.AssemblyInfoInputs.cache
+E:\Projetos dev\CsharpColections\obj\Debug\net6.0\CsharpColections.AssemblyInfo.cs
+E:\Projetos dev\CsharpColections\obj\Debug\net6.0\CsharpColections.csproj.CoreCompileInputs.cache
+E:\Projetos dev\CsharpColections\obj\Debug\net6.0\CsharpColections.dll
+E:\Projetos dev\CsharpColections\obj\Debug\net6.0\refint\CsharpColections.dll
+E:\Projetos dev\CsharpColections\obj\Debug\net6.0\CsharpColections.pdb
+E:\Projetos dev\CsharpColections\bin\Debug\net6.0\CsharpColections.exe
+E:\Projetos dev\CsharpColections\bin\Debug\net6.0\CsharpColections.deps.json
+E:\Projetos dev\CsharpColections\bin\Debug\net6.0\CsharpColections.runtimeconfig.json
+E:\Projetos dev\CsharpColections\bin\Debug\net6.0\CsharpColections.dll
+E:\Projetos dev\CsharpColections\bin\Debug\net6.0\CsharpColections.pdb
+E:\Projetos dev\CsharpColections\obj\Debug\net6.0\CsharpColections.genruntimeconfig.cache
+E:\Projetos dev\CsharpColections\obj\Debug\net6.0\ref\CsharpColections.dll

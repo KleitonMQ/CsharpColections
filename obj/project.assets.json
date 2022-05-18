@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\Moosh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\ProjetosDEV\\CsharpColections\\CsharpColections.csproj",
+      "projectUniqueName": "E:\\Projetos dev\\CsharpColections\\CsharpColections.csproj",
       "projectName": "CsharpColections",
-      "projectPath": "C:\\Users\\User\\Desktop\\ProjetosDEV\\CsharpColections\\CsharpColections.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\ProjetosDEV\\CsharpColections\\obj\\",
+      "projectPath": "E:\\Projetos dev\\CsharpColections\\CsharpColections.csproj",
+      "packagesPath": "C:\\Users\\Moosh\\.nuget\\packages\\",
+      "outputPath": "E:\\Projetos dev\\CsharpColections\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Moosh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
