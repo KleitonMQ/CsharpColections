@@ -1,7 +1,34 @@
 ﻿using static System.Console;
 using CsharpColections.helper;
 
+static void EstudoDeArray2(){
+    int[] lista = new int[10] { 6, 0, 100, 18, 10, 1, 95, 15, 45, 20 };
+    int[] copiaLista = new int[15];
+    OprecacoesArray organizar = new OprecacoesArray();
 
+    int valorProcurado = 20;
+
+    int valorAchado = organizar.ObterValor(lista, valorProcurado);
+    if (valorAchado > 0)
+    {
+        WriteLine("encontrei o valor");
+    }else{
+        WriteLine("NÃO encontrei o valor");
+    }
+
+    int index = organizar.ObterIndice(lista, valorProcurado);
+    WriteLine(index);
+
+    index = organizar.ObterIndice2(lista, valorProcurado);
+    WriteLine(index);
+
+WriteLine($"Capacidade atual do array {lista.Length}");
+organizar.RedimensionarArray(ref lista, lista.Length*2);
+
+WriteLine($"Capacidade após redimensionamento é {lista.Length}");
+
+string[] arrayConvertida = organizar.ConverterArray(lista);
+}
 static void AulaOrganizacaoComparacao()
 {
 
@@ -35,29 +62,13 @@ static void AulaOrganizacaoComparacao()
     WriteLine(todosMaiorQue);
 }
 
-int[] lista = new int[10] { 6, 0, 100, 18, 10, 1, 95, 15, 45, 20 };
-    int[] copiaLista = new int[15];
-    OprecacoesArray organizar = new OprecacoesArray();
+List<string> estados = new List<String>();
+OperacoesLista operacoesLista = new OperacoesLista();
 
-    int valorProcurado = 20;
+estados.Add("SP");
+estados.Add("MG");
+estados.Add("BA");
 
-    int valorAchado = organizar.ObterValor(lista, valorProcurado);
-    if (valorAchado > 0)
-    {
-        WriteLine("encontrei o valor");
-    }else{
-        WriteLine("NÃO encontrei o valor");
-    }
+estados.Remove("BA");
 
-    int index = organizar.ObterIndice(lista, valorProcurado);
-    WriteLine(index);
-
-    index = organizar.ObterIndice2(lista, valorProcurado);
-    WriteLine(index);
-
-WriteLine($"Capacidade atual do array {lista.Length}");
-organizar.RedimensionarArray(ref lista, lista.Length*2);
-
-WriteLine($"Capacidade após redimensionamento é {lista.Length}");
-
-string[] arrayConvertida = organizar.ConverterArray(lista);
+operacoesLista.ImprimirLista
