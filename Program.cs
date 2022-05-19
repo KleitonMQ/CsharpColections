@@ -109,16 +109,65 @@ static void ConhecendoStack()
         WriteLine($"{pilha.Pop()} - todo lido."); //O .Pop remove o elemento do topo da pilha.
     }
 }
-
-//primeira string é uma chave, segunda string um valor para a chave.
-//A chave deve ser unica, se tentar fazer duas iguais da erro na hora de compilar.
-Dictionary<string, string> estados = new Dictionary<string, string>();
-
-estados.Add("SP", "São Paulo");
-estados.Add("MG", "Minas Gerais");
-estados.Add("BA", "Bahia");
-
-foreach (var item in estados)
+static void ConhecendoDictionary()
 {
-    WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+    //primeira string é uma chave, segunda string um valor para a chave.
+    //A chave deve ser unica, se tentar fazer duas iguais da erro na hora de compilar.
+    Dictionary<string, string> estados = new Dictionary<string, string>();
+
+    estados.Add("SP", "São Paulo");
+    estados.Add("MG", "Minas Gerais");
+    estados.Add("BA", "Bahia");
+
+
+    string valorProcurado = "BA";
+    WriteLine(estados[valorProcurado]); //Diferente das outros vetores, o dictionary faz a busca de acordo com a chave e não pelo index. 
+    estados[valorProcurado] = "BA - teste de atualização"; // forma de atualizar o elemento da chave.
+    WriteLine(estados[valorProcurado]);
+
+    estados.Remove(valorProcurado); //remover um elemento pela chave.
+
+    foreach (var item in estados)
+    {
+        WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+    }
+    valorProcurado = "MG";
+    //usando este tratamento evita erro caso a chave procurada não seja encontrada.
+    //buscar de maneira direta, caso a chave não seja encontrada o programa para de rodar. 
+    if (estados.TryGetValue(valorProcurado, out string estadoEncontrado))
+    {
+        WriteLine(estadoEncontrado);
+    }
+    else
+    {
+        WriteLine($"Chave {valorProcurado} não encontrada");
+    }
+
+}
+static void EstudoLinQ()
+{
+    //O Language-Integrated Query (LINQ) é uma maneira de você utilizar uma sintaxe de consulta padronizada para coleções de objetos.
+
+    int[] arrayNumeros = new int[] { 50, 1, 4, 0, 8, 100, 15, 19, 1, 0, 8, 50, 54, 60, 35 };
+
+    var numerosParesQuery = from numeros in arrayNumeros where numeros % 2 == 0 orderby numeros select numeros;
+
+    var numerosParesMetodo = arrayNumeros.Where(x => x % 2 == 0).OrderBy(x => x).ToList();
+
+    WriteLine("Numeros pares extraidos pelo metodo: " + string.Join(", ", numerosParesMetodo));
+
+    WriteLine("Numeros pares extraidos pelo query: " + string.Join(", ", numerosParesQuery));
+
+    var minimo = arrayNumeros.Min();
+    var maximo = arrayNumeros.Max();
+    var medio = arrayNumeros.Average();
+
+    var soma = arrayNumeros.Sum();
+    var arrayUnicos = arrayNumeros.Distinct().ToArray();  //remove valores duplicatos na array
+
+    WriteLine($"valor mínimo {minimo}, valor maximo {maximo}, valor médio {medio}");
+    WriteLine($"soma {soma}");
+
+    WriteLine($"Array original: {string.Join(", ", arrayNumeros)}");
+    WriteLine($"Array distinto: {string.Join(", ", arrayUnicos)}");
 }
