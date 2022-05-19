@@ -11,9 +11,14 @@ namespace CsharpColections.helper
                 Write($"{item} ");
             }
         }
-        public void AddInfo(List<string> lista, string info)
+        public void AddElemento(List<string> lista, string info)
         {
             lista.Add(info);
+        }
+
+        public void RemoverElemento(List<string> lista, string info)
+        {
+            lista.Remove(info);
         }
     }
 }
