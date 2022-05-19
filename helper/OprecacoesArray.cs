@@ -64,6 +64,10 @@ namespace CsharpColections.helper
         public void RedimensionarArray(ref int[] array, int novoTamanho){
           Array.Resize(ref array, novoTamanho);   
         }
+
+        public string[] ConverterArray(int[] array){
+            return Array.ConvertAll(array, elemento => elemento.ToString());
+        }
     }
 }
 

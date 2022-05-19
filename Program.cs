@@ -59,3 +59,5 @@ WriteLine($"Capacidade atual do array {lista.Length}");
 organizar.RedimensionarArray(ref lista, lista.Length*2);
 
 WriteLine($"Capacidade após redimensionamento é {lista.Length}");
+
+string[] arrayConvertida = organizar.ConverterArray(lista);
